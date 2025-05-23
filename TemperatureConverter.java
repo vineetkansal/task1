@@ -6,7 +6,6 @@ public class TemperatureConverter {
         fromScale = fromScale.toLowerCase();
         toScale = toScale.toLowerCase();
 
-        // Convert from source to Celsius
         double celsius;
         switch (fromScale) {
             case "celsius":
@@ -22,7 +21,6 @@ public class TemperatureConverter {
                 throw new IllegalArgumentException("Invalid fromScale. Use Celsius, Fahrenheit, or Kelvin.");
         }
 
-        // Convert from Celsius to target
         switch (toScale) {
             case "celsius":
                 return celsius;
